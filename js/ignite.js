@@ -5,7 +5,7 @@ $(function () {
 
 function setBackground(slideNumber, of) {
   if (of == null) {of = "#content";}
-  $(of).css("backgroundImage", "url(img/"+slideNumber+".png)")
+  $(of).css("backgroundImage", "url(img/file-page"+slideNumber+".png)")
 }
 
 function startIgnite() {
@@ -19,13 +19,13 @@ function startIgnite() {
   $('#content').css("cursor", "none");
   $('#content p').css("font-size", "10vh");
   $('#content p').css("padding", "0 3vh");
-  animateSlide(actualSlide);
+  animateSlide(1);
 }
 
 function endIgnite() {
   $('.progress').hide();
   // inserire il proprio nome al posto di #IL TUO NOME#
-  $('#actual-slide').html('<span style="color: white">#IL TUO NOME#</span> <i id="flame" class="fa fa-fire" style="color: rgba(255,83,13,0.8); transition: color 0.5s ease"></i>');
+  $('#actual-slide').html('<span style="color: white">Costanza Albè</span> <i id="flame" class="fa fa-fire" style="color: rgba(255,83,13,0.8); transition: color 0.5s ease"></i>');
   alternateFlame1();
   $('#actual-slide').css('padding', "1vh 2vh");
   setBackground(21);
@@ -84,39 +84,39 @@ function progressBar(T, t) {
 function setColor(slideNumber) {
   var color = ""
   switch(slideNumber) {
-    case 2:
+    //case 2:
       // color = "rgba(255,0,0,0.7)"
-      break;
-    case 3:
+    //  break;
+    //case 3:
       // color = "rgba(255, 115, 132,0.7)"
-      break;
-    case 5:
+    //  break;
+    //case 5:
       // color = "rgba(255,0,0,0.7)"
-      break;
-    case 6:
+    //  break;
+    //case 6:
       // color = "rgba(10,10,123,0.7)"
-      break
-    case 7:
+    //  break
+    //case 7:
       // color = "rgba(10,123,10,0.7)"
-      break;
-    case 11:
+    //  break;
+    //case 11:
       // color = "rgba(20,133,133,0.7)"
-      break;
-    case 13:
+    //  break;
+    //case 13:
       // color = "rgba(255,255,10,0.7)"
-      break;
-    case 14:
+    //  break;
+    //case 14:
       // color = "rgba(255,255,10,0.7)"
-      break;
-    case 15:
+    //  break;
+    //case 15:
       // color = "rgba(255,255,10,0.7)"
-      break;
-    case 18:
+    //  break;
+    //case 18:
       // color = "rgba(123,10,123,0.7)"
-      break;
-    case 20:
+    //  break;
+    //case 20:
       // color = "rgba(255,255,10,0.7)"
-      break;
+    //  break;
     default:
       color = "#333"
   }
@@ -149,6 +149,9 @@ function animateSlide(slideNumber) {
     case 9:
       break;
     case 10:
+      console.log("HEY")
+      var vid = document.getElementById("vid-dory"); 
+      vid.play();
       // setTimeout(function(){
       //   $('.sitetree').append("<br><i class='fa fa-sitemap'></i><i class='fa fa-sitemap'></i>")
       //   setTimeout(function(){
