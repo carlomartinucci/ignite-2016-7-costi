@@ -5,7 +5,7 @@ $(function () {
 
 function setBackground(slideNumber, of) {
   if (of == null) {of = "#content";}
-  $(of).css("backgroundImage", "url(img/"+slideNumber+".jpg)")
+  $(of).css("backgroundImage", "url(img/"+slideNumber+".png)")
 }
 
 function startIgnite() {
@@ -17,6 +17,9 @@ function startIgnite() {
   $("#change-content").html(content);
   progressBar(15000, 200);
   $('#content').css("cursor", "none");
+  $('#content p').css("font-size", "10vh");
+  $('#content p').css("padding", "0 3vh");
+  animateSlide(actualSlide);
 }
 
 function endIgnite() {
