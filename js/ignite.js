@@ -5,7 +5,7 @@ $(function () {
 
 function setBackground(slideNumber, of) {
   if (of == null) {of = "#content";}
-  $(of).css("backgroundImage", "url(img/file-page"+slideNumber+".png)")
+  $(of).css("backgroundImage", "url(img/ignite_02-"+slideNumber+".png)")
 }
 
 function startIgnite() {
@@ -149,9 +149,6 @@ function animateSlide(slideNumber) {
     case 9:
       break;
     case 10:
-      console.log("HEY")
-      var vid = document.getElementById("vid-dory"); 
-      vid.play();
       // setTimeout(function(){
       //   $('.sitetree').append("<br><i class='fa fa-sitemap'></i><i class='fa fa-sitemap'></i>")
       //   setTimeout(function(){
@@ -176,6 +173,8 @@ function animateSlide(slideNumber) {
     case 12:
       break;
     case 13:
+      var vid = document.getElementById("vid-dory"); 
+      vid.play();
       break;
     case 14:
       break;

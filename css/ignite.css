@@ -21,9 +21,10 @@ body {
 
 #progressdiv {
   position: absolute;
-  bottom: 3vh;
-  right: 3vw;
+  bottom: 17vw;
+  right: -13vw;
   width: 30vw;
+  transform: rotate(270deg);
 }
 
 #content p {
@@ -68,8 +69,8 @@ body {
 
 #actual-slide {
   position: absolute;
-  top: 1vh;
-  right: 1vh;
+  top: 3vh;
+  right: 3vh;
   min-width: 6vh;
   height: 6vh;
   line-height: 4vh;
