@@ -137,8 +137,9 @@ function animateSlide(slideNumber) {
     case 5:
       break;
     case 6:
+      setBackground(''+actualSlide+'b', "#preload");
       setTimeout(function(){
-        $("#content").css("backgroundImage", "url(img/ignite_02-"+slideNumber+".png)")
+        setBackground(''+actualSlide+'b');
         }, 7500);
       break;
     case 7:
