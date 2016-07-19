@@ -137,9 +137,9 @@ function animateSlide(slideNumber) {
     case 5:
       break;
     case 6:
-      setBackground(''+actualSlide+'b', "#preload");
+      setBackground(''+slideNumber+'b', "#preload");
       setTimeout(function(){
-        setBackground(''+actualSlide+'b');
+        setBackground(''+slideNumber+'b');
         }, 7500);
       break;
     case 7:
