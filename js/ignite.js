@@ -137,10 +137,9 @@ function animateSlide(slideNumber) {
     case 5:
       break;
     case 6:
-      // setTimeout(function(){
-      //     $('.change-color').css("color", "rgba(123,10,123,0.7)")
-      //     $('.progress-bar').css("background-color", "rgba(123,10,123,0.7)")
-      //   }, 10000);
+      setTimeout(function(){
+        $("#content").css("backgroundImage", "url(img/ignite_02-"+slideNumber+".png)")
+        }, 7500);
       break;
     case 7:
       break;
